@@ -73,10 +73,77 @@ function calculatePavement(g) {
 
     finalType.value = (trafficCat.value) + " " + (SubGradeCat.value);
 
+    var showType = document.getElementById("showType");
+    var chooseImg = ["T1SG1.jpg", "T1SG2.jpg", "T1SG3.jpg", "T1SG4.jpg",
+        "T2SG1.jpg", "T2SG2.jpg", "T2SG3.jpg", "T2SG4.jpg",
+        "T3SG1.jpg", "T3SG2.jpg", "T3SG3.jpg", "T3SG4.jpg",
+        "T4SG1.jpg", "T4SG2.jpg", "T4SG3.jpg", "T4SG4.jpg",
+        "T5SG1.jpg", "T5SG2.jpg", "T5SG3.jpg", "T5SG4.jpg"]
+
+    if (trafficCat.value == "T 1") {
+
+        if (SubGradeCat.value == "SG 1") {
+            document.getElementById("showType").src = chooseImg[0];
+        }
+        else if (SubGradeCat.value == "SG 2") {
+            document.getElementById("showType").src = chooseImg[1];
+        } else if (SubGradeCat.value == "SG 3") {
+            document.getElementById("showType").src = chooseImg[2];
+        } else if (SubGradeCat.value == "SG 4") {
+            document.getElementById("showType").src = chooseImg[3];
+        }
+    } else if (trafficCat.value == "T 2") {
+        if (SubGradeCat.value == "SG 1") {
+            document.getElementById("showType").src = chooseImg[4];
+        }
+        else if (SubGradeCat.value == "SG 2") {
+            document.getElementById("showType").src = chooseImg[5];
+        } else if (SubGradeCat.value == "SG 3") {
+            document.getElementById("showType").src = chooseImg[6];
+        } else if (SubGradeCat.value == "SG 4") {
+            document.getElementById("showType").src = chooseImg[7];
+        }
+    } else if (trafficCat.value == "T 3") {
+        if (SubGradeCat.value == "SG 1") {
+            document.getElementById("showType").src = chooseImg[8];
+        }
+        else if (SubGradeCat.value == "SG 2") {
+            document.getElementById("showType").src = chooseImg[9];
+        } else if (SubGradeCat.value == "SG 3") {
+            document.getElementById("showType").src = chooseImg[10];
+        } else if (SubGradeCat.value == "SG 4") {
+            document.getElementById("showType").src = chooseImg[11];
+        }
+    } else if (trafficCat.value == "T 4") {
+        if (SubGradeCat.value == "SG 1") {
+            document.getElementById("showType").src = chooseImg[12];
+        }
+        else if (SubGradeCat.value == "SG 2") {
+            document.getElementById("showType").src = chooseImg[13];
+        } else if (SubGradeCat.value == "SG 3") {
+            document.getElementById("showType").src = chooseImg[14];
+        } else if (SubGradeCat.value == "SG 4") {
+            document.getElementById("showType").src = chooseImg[15];
+        }
+    }else if (trafficCat.value == "T 5") {
+        if (SubGradeCat.value == "SG 1") {
+            document.getElementById("showType").src = chooseImg[16];
+        }
+        else if (SubGradeCat.value == "SG 2") {
+            document.getElementById("showType").src = chooseImg[16];
+        } else if (SubGradeCat.value == "SG 3") {
+            document.getElementById("showType").src = chooseImg[17];
+        } else if (SubGradeCat.value == "SG 4") {
+            document.getElementById("showType").src = chooseImg[18];
+        }
+    }
+
     g.preventDefault();
 
 
 }
+
+
 
 
 var table = document.getElementById("rate");
